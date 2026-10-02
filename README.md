@@ -69,7 +69,9 @@ Ghost inatoa **kazi 16 za uimarishaji wa Windows** pamoja na **muunganiko wa usa
 ### Tathmini ya Usalama
 ```powershell
 # Pakia moduli ya Ghost
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 
 # Angalia hali ya usalama ya sasa
 Get-Ghost
@@ -97,7 +99,9 @@ Set-Ghost -SMBv1 -RDP -USBStorage -Intune
 
 ### Chaguo la 1: Upakuaji wa Moja kwa Moja (Jaribio)
 ```powershell
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 ```
 
 ### Chaguo la 2: Usakinishaji wa Moduli
